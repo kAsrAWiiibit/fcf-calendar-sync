@@ -49,7 +49,7 @@ Edit `config.py`:
 - **Only one team:** set `TEAM_FILTER = "MANRESA"` (case-insensitive, matches
   part of the name). With `None` the calendar contains all matches in the group.
 
-Each match is one event: `Home vs Away`, location = venue, 2 hours long (the
+Each match is one event: `Home vs Away`, location = venue, 70 minutes long (the
 API has no match length; change `MATCH_DURATION_MINUTES`). Event UIDs are
 derived from the competition, group and match ID, so a rescheduled match is
 *updated* in your calendar rather than duplicated. Scores are added to the
