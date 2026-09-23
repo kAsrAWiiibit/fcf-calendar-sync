@@ -1,0 +1,21 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node (in case tooling is added later)
+node_modules/
+
+# Secrets / local config
+.env
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Debug output from discover_api.py and raw API dumps (not needed in the repo)
+data/network_log.json
+data/page.png
+data/raw_partidos.json

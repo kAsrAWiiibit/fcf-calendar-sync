@@ -1,0 +1,58 @@
+name: Update calendar
+
+on:
+  schedule:
+    # Once a day at 05:17 UTC (off the top of the hour, when GitHub is busiest)
+    - cron: "17 5 * * *"
+  workflow_dispatch: # allows running it manually from the Actions tab
+
+# Needed so the job can push a commit and (see last step) re-enable itself.
+permissions:
+  contents: write
+  actions: write
+
+# Never run two updates at once.
+concurrency:
+  group: update-calendar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch matches from the FCF API
+        run: python fetch_matches.py
+
+      - name: Generate docs/calendar.ics
+        run: python make_ics.py
+
+      - name: Commit and push if anything changed
+        run: |
+          # Only commit when the generated files really differ from the repo.
+          if [ -z "$(git status --porcelain docs/calendar.ics data/matches.json)" ]; then
+            echo "No changes - nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/calendar.ics data/matches.json
+          git commit -m "Update calendar"
+          git push
+
+      # GitHub disables scheduled workflows after 60 days without repo activity.
+      # If the fixtures don't change for a long stretch (e.g. summer break) there
+      # are no commits, so we re-enable the workflow ourselves to reset the timer.
+      - name: Keep scheduled workflow alive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow enable update-calendar.yml

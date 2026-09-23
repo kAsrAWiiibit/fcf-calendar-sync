@@ -1,0 +1,4 @@
+requests>=2.31
+ics==0.7.3
+# Only needed for discover_api.py (one-off API discovery), not for the daily job:
+# playwright>=1.40
