@@ -17,11 +17,11 @@ API_BASE = "https://www.fcf.cat/api/competition"
 TIMEZONE = "Europe/Madrid"
 
 # The API has no match length, so every event gets this duration (minutes).
-MATCH_DURATION_MINUTES = 120
+MATCH_DURATION_MINUTES = 70
 
 # Set this to a team name (or part of one, case-insensitive) to only put that
 # team's matches in the calendar, e.g. "MANRESA". None = every match in the group.
-TEAM_FILTER = None
+TEAM_FILTER = "SANT CUGAT FUTBOL CLUB B"
 
 # Fallback used if the competition name can't be fetched.
 COMPETITION_NAME_FALLBACK = "FCF League"

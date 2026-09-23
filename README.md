@@ -14,7 +14,8 @@ fcf.cat API ──▶ fetch_matches.py ──▶ data/matches.json ──▶ mak
 ```
 
 Currently configured for **INFANTIL PRIMERA DIVISIÓ S13 – GRUP 6**, season
-2026-2027 (240 matches). See `config.py`.
+2026-2027, filtered to the matches of **SANT CUGAT FUTBOL CLUB B** (30 matches,
+70 minutes each). See `config.py`.
 
 ## Files
 
