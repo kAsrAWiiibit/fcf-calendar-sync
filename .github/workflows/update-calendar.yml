@@ -34,9 +34,13 @@ jobs:
         run: python fetch_matches.py
 
       - name: Generate the calendars (docs/*.ics)
+        id: generate
         run: python make_ics.py
 
+      # Also runs when one feed failed to build, so the other feeds still get
+      # published. Skipped if we never got as far as generating (e.g. fetch failed).
       - name: Commit and push if anything changed
+        if: ${{ !cancelled() && steps.generate.outcome != 'skipped' }}
         run: |
           # Only commit when the generated files really differ from the repo.
           if [ -z "$(git status --porcelain docs data)" ]; then
@@ -53,6 +57,7 @@ jobs:
       # If the fixtures don't change for a long stretch (e.g. summer break) there
       # are no commits, so we re-enable the workflow ourselves to reset the timer.
       - name: Keep scheduled workflow alive
+        if: ${{ !cancelled() }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow enable update-calendar.yml

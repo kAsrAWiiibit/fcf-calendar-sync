@@ -5,6 +5,7 @@ Usage:  python make_ics.py
 """
 import hashlib
 import json
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -18,6 +19,16 @@ import config
 # A fixed timestamp for CREATED / DTSTAMP. If we used "now", the file would
 # change on every run and the workflow would commit every day for nothing.
 FIXED_STAMP = datetime(2026, 1, 1, tzinfo=timezone.utc)
+
+
+class FeedError(Exception):
+    """A feed that can't be built; the other feeds are still written."""
+
+
+def normalize_name(name: str) -> str:
+    """Upper-case, drop quote marks, collapse spaces, so the filter
+    'Sant Cugat Futbol Club "B"' also matches 'SANT CUGAT FUTBOL CLUB B'."""
+    return " ".join(re.sub(r"[\"'“”‘’«»]", " ", name).upper().split())
 
 
 def stable_uid(feed: dict, match_id: str) -> str:
@@ -59,18 +70,23 @@ def build_calendar(feed: dict) -> None:
     matches = json.loads(Path(config.matches_json(feed["grup_id"])).read_text(encoding="utf-8"))
 
     if feed["team_filter"]:
-        needle = feed["team_filter"].lower()
+        needle = normalize_name(feed["team_filter"])
+        teams = sorted({m["home_team"] for m in matches} | {m["away_team"] for m in matches})
         matches = [
             m for m in matches
-            if needle in m["home_team"].lower() or needle in m["away_team"].lower()
+            if needle in normalize_name(m["home_team"]) or needle in normalize_name(m["away_team"])
         ]
+        if not matches:
+            raise FeedError(
+                f"Feed {feed['slug']!r}: team_filter {feed['team_filter']!r} matches no team. "
+                "Teams in this group:\n  " + "\n  ".join(teams)
+            )
 
     # Matches without a date yet (not scheduled) can't be put on a calendar.
     scheduled = [m for m in matches if m["kickoff"]]
     skipped = len(matches) - len(scheduled)
     if not scheduled:
-        sys.exit(f"Feed {feed['slug']!r}: no scheduled matches - check team_filter "
-                 f"{feed['team_filter']!r} against the team names in the group.")
+        raise FeedError(f"Feed {feed['slug']!r}: none of its {len(matches)} matches has a date yet.")
 
     calendar = Calendar(creator="-//fcf-calendar-sync//EN")
     for match in scheduled:
@@ -92,8 +108,17 @@ def build_calendar(feed: dict) -> None:
 
 
 def main() -> None:
+    failed = []
     for feed in config.FEEDS:
-        build_calendar(feed)
+        try:
+            build_calendar(feed)
+        except FeedError as err:
+            print(f"ERROR: {err}", file=sys.stderr)
+            failed.append(feed["slug"])
+    # Exit non-zero so the workflow run is marked failed (and GitHub emails you),
+    # but only after writing every feed that did work.
+    if failed:
+        sys.exit(f"Failed feeds: {', '.join(failed)} (the other feeds were written)")
 
 
 if __name__ == "__main__":
