@@ -19,6 +19,7 @@ subscription URL. Currently configured (season 2026-2027):
 | Feed URL | Team | Competition |
 |---|---|---|
 | `…/calendar.ics` | SANT CUGAT FUTBOL CLUB B | INFANTIL PRIMERA DIVISIÓ S13 – GRUP 6 (70 min) |
+| `…/filial.ics` | SANT CUGAT FUTBOL CLUB "B" | competition 58161888, group 58161907 (90 min) |
 
 ## Files
 

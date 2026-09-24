@@ -29,6 +29,13 @@ FEEDS = [
         "team_filter": "SANT CUGAT FUTBOL CLUB B",
         "match_duration_minutes": 70,
     },
+    {
+        "slug": "filial",
+        "competicio_id": "58161888",
+        "grup_id": "58161907",
+        "team_filter": 'SANT CUGAT FUTBOL CLUB "B"',
+        "match_duration_minutes": 90,
+    },
 ]
 
 # Fallback used if a competition name can't be fetched.
