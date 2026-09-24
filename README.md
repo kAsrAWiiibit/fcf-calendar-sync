@@ -5,25 +5,28 @@ Turns a football league's fixture list from the Catalan Football Federation
 Calendar can subscribe to. Everything runs for free:
 
 ```
-fcf.cat API ──▶ fetch_matches.py ──▶ data/matches.json ──▶ make_ics.py ──▶ docs/calendar.ics
+fcf.cat API ──▶ fetch_matches.py ──▶ data/matches-<grup>.json ──▶ make_ics.py ──▶ docs/<slug>.ics
    (GitHub Actions, once a day)                                              │
                                                        GitHub Pages serves it ▼
-                                             https://<username>.github.io/fcf-calendar-sync/calendar.ics
+                                             https://<username>.github.io/fcf-calendar-sync/<slug>.ics
                                                                              │
                                                                 Google Calendar subscribes
 ```
 
-Currently configured for **INFANTIL PRIMERA DIVISIÓ S13 – GRUP 6**, season
-2026-2027, filtered to the matches of **SANT CUGAT FUTBOL CLUB B** (30 matches,
-70 minutes each). See `config.py`.
+Each entry in `FEEDS` in `config.py` becomes its own calendar with its own
+subscription URL. Currently configured (season 2026-2027):
+
+| Feed URL | Team | Competition |
+|---|---|---|
+| `…/calendar.ics` | SANT CUGAT FUTBOL CLUB B | INFANTIL PRIMERA DIVISIÓ S13 – GRUP 6 (70 min) |
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `config.py` | League IDs, timezone, match duration, optional team filter |
-| `fetch_matches.py` | Calls the FCF API, writes `data/matches.json` |
-| `make_ics.py` | Converts `data/matches.json` into `docs/calendar.ics` |
+| `config.py` | Season, timezone and the list of feeds (IDs, team filter, match duration) |
+| `fetch_matches.py` | Calls the FCF API, writes `data/matches-<grup_id>.json` per group |
+| `make_ics.py` | Writes one `docs/<slug>.ics` per feed |
 | `discover_api.py` | One-off helper (Playwright) used to find the API; only needed if FCF changes it |
 | `docs/api-notes.md` | Documentation of the API endpoint |
 | `.github/workflows/update-calendar.yml` | Daily automation |
@@ -35,23 +38,32 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-python fetch_matches.py   # -> data/matches.json
-python make_ics.py        # -> docs/calendar.ics
+python fetch_matches.py   # -> data/matches-<grup_id>.json
+python make_ics.py        # -> docs/<slug>.ics
 ```
 
-## Change the league or only follow one team
+## Add a team (another calendar)
 
-Edit `config.py`:
+Add an entry to `FEEDS` in `config.py`:
 
-- **Another group/competition:** update `COMPETICIO_ID` and `GRUP_ID` (and
-  `DISCIPLINA_ID`/`TEMPORADA_ID` if needed). Copy them from the URL on
-  fcf.cat's competition page — see `docs/api-notes.md`.
-- **Only one team:** set `TEAM_FILTER = "MANRESA"` (case-insensitive, matches
-  part of the name). With `None` the calendar contains all matches in the group.
+```python
+{
+    "slug": "cadet-a",              # -> https://<username>.github.io/fcf-calendar-sync/cadet-a.ics
+    "competicio_id": "58161888",    # from the competition page URL on fcf.cat
+    "grup_id": "58161907",
+    "team_filter": "SANT CUGAT FUTBOL CLUB A",   # part of the name, case-insensitive; None = whole group
+    "match_duration_minutes": 80,
+},
+```
 
-Each match is one event: `Home vs Away`, location = venue, 70 minutes long (the
-API has no match length; change `MATCH_DURATION_MINUTES`). Event UIDs are
-derived from the competition, group and match ID, so a rescheduled match is
+Copy `competicioId` and `grupId` from the URL of the team's competition /
+standings page on fcf.cat (see `docs/api-notes.md`). Push, and the next workflow
+run publishes the new `.ics`. If `team_filter` matches no team, `make_ics.py`
+stops with an error instead of publishing an empty calendar.
+
+Each match is one event: `Home vs Away`, location = venue, as long as the feed's
+`match_duration_minutes` (the API has no match length). Event UIDs are
+derived from the feed slug, competition, group and match ID, so a rescheduled match is
 *updated* in your calendar rather than duplicated. Scores are added to the
 event description once played.
 

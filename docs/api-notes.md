@@ -49,7 +49,7 @@ GET https://www.fcf.cat/api/competition/partidos?grupId=58162481
 
 Other fields exist (`ESTADO`, `CERRADA`, crests, club ids, ...) but weren't
 needed. There is **no match length**, so the calendar uses a fixed duration
-(`MATCH_DURATION_MINUTES` in `config.py`).
+(`match_duration_minutes` per feed in `config.py`).
 
 `ESTADO` was `0` for every match at the time of writing, so I don't know what
 values it takes for postponed/suspended matches. If a match ever gets a null
@@ -74,7 +74,7 @@ All are `GET https://www.fcf.cat/api/competition/...` returning
 
 Change the dropdowns on https://www.fcf.cat/ca/competicio and copy the IDs from
 the URL, or walk the endpoints above: `temporadas` → `disciplines` →
-`competicions` → `grupos`. Then update `config.py`.
+`competicions` → `grupos`. Then add a feed to `FEEDS` in `config.py`.
 
 ## Risks
 

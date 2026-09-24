@@ -1,5 +1,5 @@
 """Step 1 of the pipeline: download the fixture list from the FCF API and
-save it as a clean, normalized JSON file (data/matches.json).
+save it as a clean, normalized JSON file per group (data/matches-<grup_id>.json).
 
 No browser needed - the API is public and requires no cookies or auth.
 See docs/api-notes.md for how the endpoint was found.
@@ -33,19 +33,17 @@ def get_json(path: str, params: dict, retries: int = 3):
             time.sleep(5 * attempt)
 
 
-def fetch_competition_name() -> str:
-    """Look up the competition's display name; fall back to a default on error."""
+def fetch_competition_names() -> dict:
+    """Map competition id -> display name; empty on error (names are cosmetic)."""
     try:
         competitions = get_json(
             "competicions",
             {"disciplinaId": config.DISCIPLINA_ID, "temporada": config.TEMPORADA_ID},
         )
-        for comp in competitions:
-            if comp["value"] == config.COMPETICIO_ID:
-                return comp["label"]
+        return {comp["value"]: comp["label"] for comp in competitions}
     except Exception as err:  # the name is cosmetic, don't fail the whole run
-        print(f"Could not fetch competition name: {err}", file=sys.stderr)
-    return config.COMPETITION_NAME_FALLBACK
+        print(f"Could not fetch competition names: {err}", file=sys.stderr)
+        return {}
 
 
 def normalize(raw_match: dict, competition: str) -> dict:
@@ -71,11 +69,10 @@ def normalize(raw_match: dict, competition: str) -> dict:
     }
 
 
-def main() -> None:
+def fetch_group(grup_id: str, competition: str) -> None:
     # The response is a dict keyed by matchday: {"1": [match, ...], "2": [...]}.
     # It contains the whole season in one go, so there is no pagination.
-    raw = get_json("partidos", {"grupId": config.GRUP_ID})
-    competition = fetch_competition_name()
+    raw = get_json("partidos", {"grupId": grup_id})
 
     matches = [normalize(m, competition) for day in raw.values() for m in day]
     matches.sort(key=lambda m: (m["matchday"], m["kickoff"] or "", m["match_id"]))
@@ -83,13 +80,20 @@ def main() -> None:
     # Safety net: never overwrite good data with an empty result. Exiting with
     # an error also makes the GitHub Action fail instead of committing garbage.
     if not matches:
-        sys.exit("API returned no matches - refusing to overwrite existing data.")
+        sys.exit(f"API returned no matches for group {grup_id} - refusing to overwrite existing data.")
 
-    out = Path(config.MATCHES_JSON)
+    out = Path(config.matches_json(grup_id))
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(matches, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Saved {len(matches)} matches ({competition}) to {out}")
 
+
+def main() -> None:
+    names = fetch_competition_names()
+    # Several feeds can follow teams in the same group; fetch each group once.
+    groups = {feed["grup_id"]: feed["competicio_id"] for feed in config.FEEDS}
+    for grup_id, competicio_id in groups.items():
+        fetch_group(grup_id, names.get(competicio_id, config.COMPETITION_NAME_FALLBACK))
 
 if __name__ == "__main__":
     main()

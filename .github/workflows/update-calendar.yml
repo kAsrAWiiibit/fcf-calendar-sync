@@ -33,19 +33,19 @@ jobs:
       - name: Fetch matches from the FCF API
         run: python fetch_matches.py
 
-      - name: Generate docs/calendar.ics
+      - name: Generate the calendars (docs/*.ics)
         run: python make_ics.py
 
       - name: Commit and push if anything changed
         run: |
           # Only commit when the generated files really differ from the repo.
-          if [ -z "$(git status --porcelain docs/calendar.ics data/matches.json)" ]; then
+          if [ -z "$(git status --porcelain docs data)" ]; then
             echo "No changes - nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/calendar.ics data/matches.json
+          git add docs data
           git commit -m "Update calendar"
           git push
 

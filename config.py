@@ -1,14 +1,12 @@
 """Settings shared by fetch_matches.py and make_ics.py.
 
-The IDs come from the competition page URL:
+Each feed's IDs come from the competition page URL, e.g.
 https://www.fcf.cat/ca/competicio?temporadaId=22&disciplinaId=19308233
     &competicioId=58162474&grupId=58162481
 """
 
 TEMPORADA_ID = "22"          # season 2026-2027
 DISCIPLINA_ID = "19308233"   # Futbol 11
-COMPETICIO_ID = "58162474"   # competition (e.g. INFANTIL PRIMERA DIVISIÓ S13)
-GRUP_ID = "58162481"         # group ("GRUP 6")
 
 API_BASE = "https://www.fcf.cat/api/competition"
 
@@ -16,16 +14,34 @@ API_BASE = "https://www.fcf.cat/api/competition"
 # so we interpret them in the Catalan timezone.
 TIMEZONE = "Europe/Madrid"
 
-# The API has no match length, so every event gets this duration (minutes).
-MATCH_DURATION_MINUTES = 70
+# One calendar per feed, published at https://<user>.github.io/fcf-calendar-sync/<slug>.ics
+#   slug                    file name in docs/ (and part of the event UIDs)
+#   competicio_id, grup_id  competition and group, from the URL above
+#   team_filter             team name (or part of one, case-insensitive) to only
+#                           keep that team's matches; None = every match in the group
+#   match_duration_minutes  the API has no match length, so every event gets this
+FEEDS = [
+    {
+        # "calendar" keeps the original URL .../calendar.ics working.
+        "slug": "calendar",
+        "competicio_id": "58162474",   # INFANTIL PRIMERA DIVISIÓ S13
+        "grup_id": "58162481",         # GRUP 6
+        "team_filter": "SANT CUGAT FUTBOL CLUB B",
+        "match_duration_minutes": 70,
+    },
+]
 
-# Set this to a team name (or part of one, case-insensitive) to only put that
-# team's matches in the calendar, e.g. "MANRESA". None = every match in the group.
-TEAM_FILTER = "SANT CUGAT FUTBOL CLUB B"
-
-# Fallback used if the competition name can't be fetched.
+# Fallback used if a competition name can't be fetched.
 COMPETITION_NAME_FALLBACK = "FCF League"
 
 # Files
-MATCHES_JSON = "data/matches.json"
-CALENDAR_ICS = "docs/calendar.ics"
+DATA_DIR = "data"     # matches-<grup_id>.json, one per group
+DOCS_DIR = "docs"     # <slug>.ics, served by GitHub Pages
+
+
+def matches_json(grup_id: str) -> str:
+    return f"{DATA_DIR}/matches-{grup_id}.json"
+
+
+def calendar_ics(slug: str) -> str:
+    return f"{DOCS_DIR}/{slug}.ics"
