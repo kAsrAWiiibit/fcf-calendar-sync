@@ -10,8 +10,8 @@
     "venue": "ESTADI ZEM DEL CONGOST",
     "latitude": "41.722848",
     "longitude": "1.812936",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 5,
+    "away_goals": 1
   },
   {
     "match_id": "4210737",
@@ -24,8 +24,8 @@
     "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
     "latitude": "41.713922",
     "longitude": "1.803965",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 0,
+    "away_goals": 0
   },
   {
     "match_id": "4210736",
@@ -112,6 +112,34 @@
     "away_goals": null
   },
   {
+    "match_id": "4210747",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 2,
+    "kickoff": "2026-10-03T13:30:00",
+    "home_team": "UNIO F. BASE JABAC I TERRASSA B",
+    "away_team": "SANT CUGAT FUTBOL CLUB B",
+    "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
+    "latitude": "41.54908",
+    "longitude": "2.020602",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210750",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 2,
+    "kickoff": "2026-10-03T13:30:00",
+    "home_team": "JUAN XXIII,C.S. A",
+    "away_team": "JUNIOR,C.F. B",
+    "venue": "CAMP DE FUTBOL MPAL. DE LES ARENES",
+    "latitude": "41.57006",
+    "longitude": "2.03758",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
     "match_id": "4210749",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -126,25 +154,11 @@
     "away_goals": null
   },
   {
-    "match_id": "4210750",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 2,
-    "kickoff": "2026-10-03T14:00:00",
-    "home_team": "JUAN XXIII,C.S. A",
-    "away_team": "JUNIOR,C.F. B",
-    "venue": "CAMP DE FUTBOL MPAL. DE LES ARENES",
-    "latitude": "41.57006",
-    "longitude": "2.03758",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210743",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 2,
-    "kickoff": "2026-10-04T09:00:00",
+    "kickoff": "2026-10-04T10:30:00",
     "home_team": "NATACIO TERRASSA, C B",
     "away_team": "MATADEPERENC, ATHLETIC A",
     "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
@@ -182,20 +196,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210745",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 2,
-    "kickoff": "2026-10-04T11:20:00",
-    "home_team": "FUNDACIÓ TERRASSA FC 1906 B",
-    "away_team": "SAN LORENZO, U.D. A",
-    "venue": "ESTADI OLÍMPIC DE TERRASSA",
-    "latitude": "41.576105",
-    "longitude": "2.011134",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210744",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -210,16 +210,30 @@
     "away_goals": null
   },
   {
-    "match_id": "4210747",
+    "match_id": "4210745",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 2,
-    "kickoff": "2026-10-04T11:30:00",
-    "home_team": "UNIO F. BASE JABAC I TERRASSA B",
-    "away_team": "SANT CUGAT FUTBOL CLUB B",
-    "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
-    "latitude": "41.54908",
-    "longitude": "2.020602",
+    "kickoff": "2026-10-04T12:35:00",
+    "home_team": "FUNDACIÓ TERRASSA FC 1906 B",
+    "away_team": "SAN LORENZO, U.D. A",
+    "venue": "ESTADI OLÍMPIC DE TERRASSA",
+    "latitude": "41.576105",
+    "longitude": "2.011134",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210756",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 3,
+    "kickoff": "2026-10-10T13:15:00",
+    "home_team": "JOANENC, F.C. A",
+    "away_team": "SAN CRISTOBAL, C.P. B",
+    "venue": "CAMP DE FUTBOL ZEM DE SANT JOAN VILATORRADA",
+    "latitude": "41.750608",
+    "longitude": "1.803738",
     "home_goals": null,
     "away_goals": null
   },
@@ -234,20 +248,6 @@
     "venue": "ESTADI ZEM DEL CONGOST",
     "latitude": "41.722848",
     "longitude": "1.812936",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
-    "match_id": "4210756",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 3,
-    "kickoff": "2026-10-10T13:30:00",
-    "home_team": "JOANENC, F.C. A",
-    "away_team": "SAN CRISTOBAL, C.P. B",
-    "venue": "CAMP DE FUTBOL ZEM DE SANT JOAN VILATORRADA",
-    "latitude": "41.750608",
-    "longitude": "1.803738",
     "home_goals": null,
     "away_goals": null
   },
