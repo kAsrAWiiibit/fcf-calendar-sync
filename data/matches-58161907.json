@@ -122,8 +122,8 @@
     "venue": "CAMP DE FUTBOL MPAL. OLÍMPIA",
     "latitude": "41.55637",
     "longitude": "2.091566",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 2,
+    "away_goals": 2
   },
   {
     "match_id": "4147606",
@@ -136,8 +136,8 @@
     "venue": "CAMP DE FUTBOL MPAL. CAN PARELLADA",
     "latitude": "41.540574",
     "longitude": "2.0426",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 3,
+    "away_goals": 1
   },
   {
     "match_id": "4147604",
@@ -164,8 +164,8 @@
     "venue": "CAMP DE FUTBOL COL·LEGI VIARÓ",
     "latitude": "41.483540",
     "longitude": "2.080560",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 1,
+    "away_goals": 1
   },
   {
     "match_id": "4147608",
@@ -178,8 +178,8 @@
     "venue": "CAMP DE FUTBOL ZEM LES FONTETES",
     "latitude": "41.486739",
     "longitude": "2.1446",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 0,
+    "away_goals": 0
   },
   {
     "match_id": "4147601",
@@ -192,8 +192,8 @@
     "venue": "CAMP DE FUTBOL MPAL. ROUREDA",
     "latitude": "41.56868",
     "longitude": "2.080756",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 0,
+    "away_goals": 0
   },
   {
     "match_id": "4213831",

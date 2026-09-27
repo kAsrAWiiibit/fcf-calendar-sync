@@ -24,8 +24,8 @@
     "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
     "latitude": "41.713922",
     "longitude": "1.803965",
-    "home_goals": 0,
-    "away_goals": 0
+    "home_goals": 1,
+    "away_goals": 5
   },
   {
     "match_id": "4210736",
@@ -52,8 +52,8 @@
     "venue": "CAMP DE FUTBOL ZEM DE SANT JOAN VILATORRADA",
     "latitude": "41.750608",
     "longitude": "1.803738",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 8,
+    "away_goals": 0
   },
   {
     "match_id": "4210742",
@@ -66,8 +66,8 @@
     "venue": "CAMP DE FUTBOL MPAL. DE MATADEPERA",
     "latitude": "41.595051",
     "longitude": "2.032452",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 2,
+    "away_goals": 2
   },
   {
     "match_id": "4210738",
@@ -80,8 +80,8 @@
     "venue": "CAMP DE FUTBOL ZEM JAUME TUBAU",
     "latitude": "41.478656",
     "longitude": "2.079279",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 3,
+    "away_goals": 2
   },
   {
     "match_id": "4210741",
