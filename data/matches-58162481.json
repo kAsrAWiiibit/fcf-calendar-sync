@@ -280,20 +280,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210754",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 3,
-    "kickoff": "2026-10-10T16:00:00",
-    "home_team": "PARE IGNASI PUIG, C.F. A",
-    "away_team": "UNIO F. BASE JABAC I TERRASSA B",
-    "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
-    "latitude": "41.713922",
-    "longitude": "1.803965",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210751",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -304,6 +290,20 @@
     "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
     "latitude": "41.575006",
     "longitude": "2.008332",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210757",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 3,
+    "kickoff": "2026-10-11T09:00:00",
+    "home_team": "GIMNASTIC MANRESA, C.F B",
+    "away_team": "JUAN XXIII,C.S. A",
+    "venue": "CAMP DE FUTBOL CLUB GIMNÀSTIC PARC",
+    "latitude": "41.743797",
+    "longitude": "1.831908",
     "home_goals": null,
     "away_goals": null
   },
@@ -322,16 +322,16 @@
     "away_goals": null
   },
   {
-    "match_id": "4210757",
+    "match_id": "4210754",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 3,
-    "kickoff": "2026-10-11T10:30:00",
-    "home_team": "GIMNASTIC MANRESA, C.F B",
-    "away_team": "JUAN XXIII,C.S. A",
-    "venue": "CAMP DE FUTBOL CLUB GIMNÀSTIC PARC",
-    "latitude": "41.743797",
-    "longitude": "1.831908",
+    "kickoff": "2026-10-11T13:00:00",
+    "home_team": "PARE IGNASI PUIG, C.F. A",
+    "away_team": "UNIO F. BASE JABAC I TERRASSA B",
+    "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
+    "latitude": "41.713922",
+    "longitude": "1.803965",
     "home_goals": null,
     "away_goals": null
   },
