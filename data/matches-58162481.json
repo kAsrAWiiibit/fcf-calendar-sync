@@ -154,20 +154,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210743",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 2,
-    "kickoff": "2026-10-04T10:30:00",
-    "home_team": "NATACIO TERRASSA, C B",
-    "away_team": "MATADEPERENC, ATHLETIC A",
-    "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
-    "latitude": "41.575006",
-    "longitude": "2.008332",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210746",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -220,6 +206,20 @@
     "venue": "ESTADI OLÍMPIC DE TERRASSA",
     "latitude": "41.576105",
     "longitude": "2.011134",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210743",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 2,
+    "kickoff": "2026-10-04T14:15:00",
+    "home_team": "NATACIO TERRASSA, C B",
+    "away_team": "MATADEPERENC, ATHLETIC A",
+    "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
+    "latitude": "41.575006",
+    "longitude": "2.008332",
     "home_goals": null,
     "away_goals": null
   },
