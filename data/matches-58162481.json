@@ -38,8 +38,8 @@
     "venue": "CAMP DE FUTBOL MPAL. DE SANT LLORENÇ DE TERRASSA",
     "latitude": "41.576262",
     "longitude": "2.031405",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 1,
+    "away_goals": 12
   },
   {
     "match_id": "4210739",
