@@ -224,6 +224,20 @@
     "away_goals": null
   },
   {
+    "match_id": "4210753",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 3,
+    "kickoff": "2026-10-10T12:00:00",
+    "home_team": "SAN LORENZO, U.D. A",
+    "away_team": "FRUITOSENC, F.C. B",
+    "venue": "CAMP DE FUTBOL MPAL. DE SANT LLORENÇ DE TERRASSA",
+    "latitude": "41.576262",
+    "longitude": "2.031405",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
     "match_id": "4210756",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -252,20 +266,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210753",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 3,
-    "kickoff": "2026-10-10T14:00:00",
-    "home_team": "SAN LORENZO, U.D. A",
-    "away_team": "FRUITOSENC, F.C. B",
-    "venue": "CAMP DE FUTBOL MPAL. DE SANT LLORENÇ DE TERRASSA",
-    "latitude": "41.576262",
-    "longitude": "2.031405",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210758",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -280,16 +280,16 @@
     "away_goals": null
   },
   {
-    "match_id": "4210751",
+    "match_id": "4210754",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 3,
-    "kickoff": "2026-10-11T09:00:00",
-    "home_team": "NATACIO TERRASSA, C B",
-    "away_team": "GIRONELLA, C.F. AT. A",
-    "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
-    "latitude": "41.575006",
-    "longitude": "2.008332",
+    "kickoff": "2026-10-10T16:00:00",
+    "home_team": "PARE IGNASI PUIG, C.F. A",
+    "away_team": "UNIO F. BASE JABAC I TERRASSA B",
+    "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
+    "latitude": "41.713922",
+    "longitude": "1.803965",
     "home_goals": null,
     "away_goals": null
   },
@@ -322,16 +322,16 @@
     "away_goals": null
   },
   {
-    "match_id": "4210754",
+    "match_id": "4210751",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 3,
-    "kickoff": "2026-10-11T13:00:00",
-    "home_team": "PARE IGNASI PUIG, C.F. A",
-    "away_team": "UNIO F. BASE JABAC I TERRASSA B",
-    "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
-    "latitude": "41.713922",
-    "longitude": "1.803965",
+    "kickoff": "2026-10-11T16:45:00",
+    "home_team": "NATACIO TERRASSA, C B",
+    "away_team": "GIRONELLA, C.F. AT. A",
+    "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
+    "latitude": "41.575006",
+    "longitude": "2.008332",
     "home_goals": null,
     "away_goals": null
   },
@@ -1316,6 +1316,20 @@
     "away_goals": null
   },
   {
+    "match_id": "4210823",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 12,
+    "kickoff": "2026-12-20T09:15:00",
+    "home_team": "RUBI, U.E. A",
+    "away_team": "MATADEPERENC, ATHLETIC A",
+    "venue": "CAMP DE FUTBOL ZEM CAN ROSÉS (1)",
+    "latitude": "41.50213",
+    "longitude": "2.044349",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
     "match_id": "4210829",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -1326,20 +1340,6 @@
     "venue": "CAMP DE FUTBOL ZEM JAUME TUBAU",
     "latitude": "41.478656",
     "longitude": "2.079279",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
-    "match_id": "4210823",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 12,
-    "kickoff": "2026-12-20T10:45:00",
-    "home_team": "RUBI, U.E. A",
-    "away_team": "MATADEPERENC, ATHLETIC A",
-    "venue": "CAMP DE FUTBOL ZEM CAN ROSÉS (1)",
-    "latitude": "41.50213",
-    "longitude": "2.044349",
     "home_goals": null,
     "away_goals": null
   },

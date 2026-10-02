@@ -336,20 +336,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4147617",
-    "competition": "QUARTA CATALANA",
-    "group": "GRUP 14",
-    "matchday": 4,
-    "kickoff": "2026-10-10T18:00:00",
-    "home_team": "CERCLE SABADELLES 1856 A",
-    "away_team": "SANT CUGAT FUTBOL CLUB B",
-    "venue": "CAMP DE FUTBOL MPAL. OLÍMPIA",
-    "latitude": "41.55637",
-    "longitude": "2.091566",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4213832",
     "competition": "QUARTA CATALANA",
     "group": "GRUP 14",
@@ -360,6 +346,20 @@
     "venue": "CAMP DE FUTBOL MPAL. DE MATADEPERA",
     "latitude": "41.595051",
     "longitude": "2.032452",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4147617",
+    "competition": "QUARTA CATALANA",
+    "group": "GRUP 14",
+    "matchday": 4,
+    "kickoff": "2026-10-10T19:00:00",
+    "home_team": "CERCLE SABADELLES 1856 A",
+    "away_team": "SANT CUGAT FUTBOL CLUB B",
+    "venue": "CAMP DE FUTBOL MPAL. OLÍMPIA",
+    "latitude": "41.55637",
+    "longitude": "2.091566",
     "home_goals": null,
     "away_goals": null
   },
@@ -462,20 +462,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4147631",
-    "competition": "QUARTA CATALANA",
-    "group": "GRUP 14",
-    "matchday": 5,
-    "kickoff": "2026-10-17T16:00:00",
-    "home_team": "SABADELLENCA, UE. C",
-    "away_team": "MATADEPERENC, ATHLETIC B",
-    "venue": "CAMP DE FUTBOL MPAL. LA CREU",
-    "latitude": "41.524268",
-    "longitude": "2.112704",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4147628",
     "competition": "QUARTA CATALANA",
     "group": "GRUP 14",
@@ -486,6 +472,20 @@
     "venue": "CAMP DE FUTBOL SCHOOL EUROPA INTERNATIONAL",
     "latitude": "41.468969",
     "longitude": "2.094659",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4147631",
+    "competition": "QUARTA CATALANA",
+    "group": "GRUP 14",
+    "matchday": 5,
+    "kickoff": "2026-10-17T17:45:00",
+    "home_team": "SABADELLENCA, UE. C",
+    "away_team": "MATADEPERENC, ATHLETIC B",
+    "venue": "CAMP DE FUTBOL MPAL. LA CREU",
+    "latitude": "41.524268",
+    "longitude": "2.112704",
     "home_goals": null,
     "away_goals": null
   },
