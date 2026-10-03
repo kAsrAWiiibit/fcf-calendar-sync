@@ -252,20 +252,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210752",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 3,
-    "kickoff": "2026-10-10T13:30:00",
-    "home_team": "MANRESA, C.E. B",
-    "away_team": "FUNDACIÓ TERRASSA FC 1906 B",
-    "venue": "ESTADI ZEM DEL CONGOST",
-    "latitude": "41.722848",
-    "longitude": "1.812936",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210758",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -318,6 +304,20 @@
     "venue": "CAMP DE FUTBOL ZEM JAUME TUBAU",
     "latitude": "41.478656",
     "longitude": "2.079279",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210752",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 3,
+    "kickoff": "2026-10-11T12:00:00",
+    "home_team": "MANRESA, C.E. B",
+    "away_team": "FUNDACIÓ TERRASSA FC 1906 B",
+    "venue": "ESTADI ZEM DEL CONGOST",
+    "latitude": "41.722848",
+    "longitude": "1.812936",
     "home_goals": null,
     "away_goals": null
   },

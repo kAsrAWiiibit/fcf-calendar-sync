@@ -336,6 +336,34 @@
     "away_goals": null
   },
   {
+    "match_id": "4147621",
+    "competition": "QUARTA CATALANA",
+    "group": "GRUP 14",
+    "matchday": 4,
+    "kickoff": "2026-10-10T17:00:00",
+    "home_team": "CAN PARELLADA, C.D. B",
+    "away_team": "JABAC CAN JOFRESA  CLUB ESPORTIU  A",
+    "venue": "CAMP DE FUTBOL MPAL. CAN PARELLADA",
+    "latitude": "41.540574",
+    "longitude": "2.0426",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4147623",
+    "competition": "QUARTA CATALANA",
+    "group": "GRUP 14",
+    "matchday": 4,
+    "kickoff": "2026-10-10T18:15:00",
+    "home_team": "CERDANYOLA VALLES, F.C. B",
+    "away_team": "SABADELLENCA, UE. C",
+    "venue": "CAMP DE FUTBOL ZEM LES FONTETES",
+    "latitude": "41.486739",
+    "longitude": "2.1446",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
     "match_id": "4213832",
     "competition": "QUARTA CATALANA",
     "group": "GRUP 14",
@@ -364,20 +392,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4147621",
-    "competition": "QUARTA CATALANA",
-    "group": "GRUP 14",
-    "matchday": 4,
-    "kickoff": "2026-10-10T19:15:00",
-    "home_team": "CAN PARELLADA, C.D. B",
-    "away_team": "JABAC CAN JOFRESA  CLUB ESPORTIU  A",
-    "venue": "CAMP DE FUTBOL MPAL. CAN PARELLADA",
-    "latitude": "41.540574",
-    "longitude": "2.0426",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4147619",
     "competition": "QUARTA CATALANA",
     "group": "GRUP 14",
@@ -402,20 +416,6 @@
     "venue": "CAMP DE FUTBOL COL·LEGI VIARÓ",
     "latitude": "41.483540",
     "longitude": "2.080560",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
-    "match_id": "4147623",
-    "competition": "QUARTA CATALANA",
-    "group": "GRUP 14",
-    "matchday": 4,
-    "kickoff": "2026-10-11T12:15:00",
-    "home_team": "CERDANYOLA VALLES, F.C. B",
-    "away_team": "SABADELLENCA, UE. C",
-    "venue": "CAMP DE FUTBOL ZEM LES FONTETES",
-    "latitude": "41.486739",
-    "longitude": "2.1446",
     "home_goals": null,
     "away_goals": null
   },
