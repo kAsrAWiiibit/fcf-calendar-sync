@@ -122,8 +122,8 @@
     "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
     "latitude": "41.54908",
     "longitude": "2.020602",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 1,
+    "away_goals": 3
   },
   {
     "match_id": "4210750",
@@ -136,8 +136,8 @@
     "venue": "CAMP DE FUTBOL MPAL. DE LES ARENES",
     "latitude": "41.57006",
     "longitude": "2.03758",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 1,
+    "away_goals": 1
   },
   {
     "match_id": "4210749",
@@ -150,8 +150,8 @@
     "venue": "CAMP DE FUTBOL MPAL. CA N´ANGLADA",
     "latitude": "41.567013",
     "longitude": "2.035271",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 1,
+    "away_goals": 11
   },
   {
     "match_id": "4210746",
@@ -164,8 +164,8 @@
     "venue": "CAMP DE FUTBOL MPAL. DE SANT FRUITÓS DE BAGES",
     "latitude": "41.7469",
     "longitude": "1.875197",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 2,
+    "away_goals": 1
   },
   {
     "match_id": "4210748",
@@ -192,8 +192,8 @@
     "venue": "CAMP DE FUTBOL MPAL. DE GIRONELLA",
     "latitude": "42.025188",
     "longitude": "1.886336",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 1,
+    "away_goals": 0
   },
   {
     "match_id": "4210745",
