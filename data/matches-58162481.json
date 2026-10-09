@@ -336,20 +336,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210766",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 4,
-    "kickoff": "2026-10-17T12:30:00",
-    "home_team": "JUNIOR,C.F. B",
-    "away_team": "GIMNASTIC MANRESA, C.F B",
-    "venue": "CAMP DE FUTBOL CLUB JUNIOR, F.C.",
-    "latitude": "41.48299",
-    "longitude": "2.056581",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210759",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -388,6 +374,20 @@
     "venue": "CAMP DE FUTBOL MPAL. DE LES ARENES",
     "latitude": "41.57006",
     "longitude": "2.03758",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210766",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 4,
+    "kickoff": "2026-10-18T10:20:00",
+    "home_team": "JUNIOR,C.F. B",
+    "away_team": "GIMNASTIC MANRESA, C.F B",
+    "venue": "CAMP DE FUTBOL CLUB JUNIOR, F.C.",
+    "latitude": "41.48299",
+    "longitude": "2.056581",
     "home_goals": null,
     "away_goals": null
   },
@@ -438,7 +438,7 @@
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 4,
-    "kickoff": "2026-10-18T11:30:00",
+    "kickoff": "2026-10-18T18:30:00",
     "home_team": "UNIO F. BASE JABAC I TERRASSA B",
     "away_team": "SAN LORENZO, U.D. A",
     "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
