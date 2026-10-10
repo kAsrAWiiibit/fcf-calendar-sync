@@ -168,20 +168,6 @@
     "away_goals": 1
   },
   {
-    "match_id": "4210748",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 2,
-    "kickoff": "2026-10-04T10:45:00",
-    "home_team": "RUBI, U.E. A",
-    "away_team": "JOANENC, F.C. A",
-    "venue": "CAMP DE FUTBOL ZEM CAN ROSÉS (1)",
-    "latitude": "41.50213",
-    "longitude": "2.044349",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210744",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -224,6 +210,20 @@
     "away_goals": 2
   },
   {
+    "match_id": "4377482",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 2,
+    "kickoff": "2026-10-20T19:00:00",
+    "home_team": "RUBI, U.E. A",
+    "away_team": "JOANENC, F.C. A",
+    "venue": "CAMP DE FUTBOL ZEM CAN ROSÉS (2)",
+    "latitude": "41.5015",
+    "longitude": "2.043496",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
     "match_id": "4210753",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -234,8 +234,8 @@
     "venue": "CAMP DE FUTBOL MPAL. DE SANT LLORENÇ DE TERRASSA",
     "latitude": "41.576262",
     "longitude": "2.031405",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 0,
+    "away_goals": 3
   },
   {
     "match_id": "4210756",
@@ -248,8 +248,8 @@
     "venue": "CAMP DE FUTBOL ZEM DE SANT JOAN VILATORRADA",
     "latitude": "41.750608",
     "longitude": "1.803738",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 0,
+    "away_goals": 0
   },
   {
     "match_id": "4210754",
@@ -336,16 +336,16 @@
     "away_goals": null
   },
   {
-    "match_id": "4210759",
+    "match_id": "4210760",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 4,
-    "kickoff": "2026-10-17T13:00:00",
-    "home_team": "GIRONELLA, C.F. AT. A",
-    "away_team": "MATADEPERENC, ATHLETIC A",
-    "venue": "CAMP DE FUTBOL MPAL. DE GIRONELLA",
-    "latitude": "42.025188",
-    "longitude": "1.886336",
+    "kickoff": "2026-10-17T12:00:00",
+    "home_team": "FUNDACIÓ TERRASSA FC 1906 B",
+    "away_team": "NATACIO TERRASSA, C B",
+    "venue": "ESTADI OLÍMPIC DE TERRASSA",
+    "latitude": "41.576105",
+    "longitude": "2.011134",
     "home_goals": null,
     "away_goals": null
   },
@@ -368,7 +368,7 @@
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 4,
-    "kickoff": "2026-10-17T14:00:00",
+    "kickoff": "2026-10-17T14:15:00",
     "home_team": "JUAN XXIII,C.S. A",
     "away_team": "JOANENC, F.C. A",
     "venue": "CAMP DE FUTBOL MPAL. DE LES ARENES",
@@ -420,16 +420,16 @@
     "away_goals": null
   },
   {
-    "match_id": "4210760",
+    "match_id": "4210759",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 4,
-    "kickoff": "2026-10-18T11:20:00",
-    "home_team": "FUNDACIÓ TERRASSA FC 1906 B",
-    "away_team": "NATACIO TERRASSA, C B",
-    "venue": "ESTADI OLÍMPIC DE TERRASSA",
-    "latitude": "41.576105",
-    "longitude": "2.011134",
+    "kickoff": "2026-10-18T13:00:00",
+    "home_team": "GIRONELLA, C.F. AT. A",
+    "away_team": "MATADEPERENC, ATHLETIC A",
+    "venue": "CAMP DE FUTBOL MPAL. DE GIRONELLA",
+    "latitude": "42.025188",
+    "longitude": "1.886336",
     "home_goals": null,
     "away_goals": null
   },
