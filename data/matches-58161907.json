@@ -430,8 +430,8 @@
     "venue": "CAMP DE FUTBOL MPAL. POBLE NOU",
     "latitude": "41.579766",
     "longitude": "1.999841",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 2,
+    "away_goals": 1
   },
   {
     "match_id": "4147618",
@@ -444,8 +444,8 @@
     "venue": "CAMP DE FUTBOL CEM SANT OLEGUER",
     "latitude": "41.53927",
     "longitude": "2.125161",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 2,
+    "away_goals": 4
   },
   {
     "match_id": "4147629",

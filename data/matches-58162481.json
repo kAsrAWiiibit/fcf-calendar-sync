@@ -304,8 +304,8 @@
     "venue": "ESTADI ZEM DEL CONGOST",
     "latitude": "41.722848",
     "longitude": "1.812936",
-    "home_goals": 0,
-    "away_goals": 0
+    "home_goals": 2,
+    "away_goals": 2
   },
   {
     "match_id": "4210758",
@@ -318,7 +318,7 @@
     "venue": "CAMP DE FUTBOL MPAL. DE MATADEPERA",
     "latitude": "41.595051",
     "longitude": "2.032452",
-    "home_goals": 0,
+    "home_goals": 3,
     "away_goals": 0
   },
   {
@@ -326,14 +326,14 @@
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 3,
-    "kickoff": "2026-10-11T16:45:00",
+    "kickoff": "2026-10-11T17:10:00",
     "home_team": "NATACIO TERRASSA, C B",
     "away_team": "GIRONELLA, C.F. AT. A",
     "venue": "CAMP DE FUTBOL CLUB NATACIÓ TERRASSA",
     "latitude": "41.575006",
     "longitude": "2.008332",
-    "home_goals": null,
-    "away_goals": null
+    "home_goals": 0,
+    "away_goals": 3
   },
   {
     "match_id": "4210760",
@@ -476,20 +476,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210773",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 5,
-    "kickoff": "2026-10-24T13:30:00",
-    "home_team": "JOANENC, F.C. A",
-    "away_team": "JUNIOR,C.F. B",
-    "venue": "CAMP DE FUTBOL ZEM DE SANT JOAN VILATORRADA",
-    "latitude": "41.750608",
-    "longitude": "1.803738",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210770",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -556,6 +542,20 @@
     "venue": "CAMP DE FUTBOL ZEM JAUME TUBAU",
     "latitude": "41.478656",
     "longitude": "2.079279",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210773",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 5,
+    "kickoff": "2026-10-25T12:00:00",
+    "home_team": "JOANENC, F.C. A",
+    "away_team": "JUNIOR,C.F. B",
+    "venue": "CAMP DE FUTBOL ZEM DE SANT JOAN VILATORRADA",
+    "latitude": "41.750608",
+    "longitude": "1.803738",
     "home_goals": null,
     "away_goals": null
   },
