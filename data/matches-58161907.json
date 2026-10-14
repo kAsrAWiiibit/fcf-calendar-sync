@@ -280,20 +280,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4147610",
-    "competition": "QUARTA CATALANA",
-    "group": "GRUP 14",
-    "matchday": 3,
-    "kickoff": "2026-10-04T12:30:00",
-    "home_team": "ARISTOI FOOTBALL ACADEMY B",
-    "away_team": "SABADELL ATLETIC, ASSOC. ESP. P.R. A",
-    "venue": "CAMP DE FUTBOL MPAL. CAN PUIGGENER",
-    "latitude": "41.564461",
-    "longitude": "2.103349",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4147613",
     "competition": "QUARTA CATALANA",
     "group": "GRUP 14",
@@ -332,6 +318,20 @@
     "venue": "CAMP DE FUTBOL MPAL. LA CREU",
     "latitude": "41.524268",
     "longitude": "2.112704",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4378010",
+    "competition": "QUARTA CATALANA",
+    "group": "GRUP 14",
+    "matchday": 3,
+    "kickoff": "2026-10-29T20:15:00",
+    "home_team": "ARISTOI FOOTBALL ACADEMY B",
+    "away_team": "SABADELL ATLETIC, ASSOC. ESP. P.R. A",
+    "venue": "CAMP DE FUTBOL MPAL. CAN PUIGGENER",
+    "latitude": "41.564461",
+    "longitude": "2.103349",
     "home_goals": null,
     "away_goals": null
   },
