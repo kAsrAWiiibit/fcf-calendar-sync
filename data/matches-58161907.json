@@ -266,20 +266,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4147609",
-    "competition": "QUARTA CATALANA",
-    "group": "GRUP 14",
-    "matchday": 3,
-    "kickoff": "2026-10-04T12:00:00",
-    "home_team": "ATLÉTICO ROUREDA, C.F.  A",
-    "away_team": "CERCLE SABADELLES 1856 A",
-    "venue": "CAMP DE FUTBOL MPAL. ROUREDA",
-    "latitude": "41.56868",
-    "longitude": "2.080756",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4147613",
     "competition": "QUARTA CATALANA",
     "group": "GRUP 14",
@@ -332,6 +318,20 @@
     "venue": "CAMP DE FUTBOL MPAL. CAN PUIGGENER",
     "latitude": "41.564461",
     "longitude": "2.103349",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4378152",
+    "competition": "QUARTA CATALANA",
+    "group": "GRUP 14",
+    "matchday": 3,
+    "kickoff": "2026-11-04T20:30:00",
+    "home_team": "ATLÉTICO ROUREDA, C.F.  A",
+    "away_team": "CERCLE SABADELLES 1856 A",
+    "venue": "CAMP DE FUTBOL MPAL. ROUREDA",
+    "latitude": "41.56868",
+    "longitude": "2.080756",
     "home_goals": null,
     "away_goals": null
   },
