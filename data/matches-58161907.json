@@ -602,6 +602,20 @@
     "away_goals": null
   },
   {
+    "match_id": "4147638",
+    "competition": "QUARTA CATALANA",
+    "group": "GRUP 14",
+    "matchday": 6,
+    "kickoff": "2026-10-24T19:45:00",
+    "home_team": "CERDANYOLA VALLES, F.C. B",
+    "away_team": "JABAC CAN JOFRESA  CLUB ESPORTIU  A",
+    "venue": "CAMP DE FUTBOL ZEM LES FONTETES",
+    "latitude": "41.486739",
+    "longitude": "2.1446",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
     "match_id": "4147634",
     "competition": "QUARTA CATALANA",
     "group": "GRUP 14",
@@ -626,20 +640,6 @@
     "venue": "CAMP DE FUTBOL COL·LEGI VIARÓ",
     "latitude": "41.483540",
     "longitude": "2.080560",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
-    "match_id": "4147638",
-    "competition": "QUARTA CATALANA",
-    "group": "GRUP 14",
-    "matchday": 6,
-    "kickoff": "2026-10-25T12:00:00",
-    "home_team": "CERDANYOLA VALLES, F.C. B",
-    "away_team": "JABAC CAN JOFRESA  CLUB ESPORTIU  A",
-    "venue": "CAMP DE FUTBOL ZEM LES FONTETES",
-    "latitude": "41.486739",
-    "longitude": "2.1446",
     "home_goals": null,
     "away_goals": null
   },

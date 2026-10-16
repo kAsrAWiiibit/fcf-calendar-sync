@@ -182,20 +182,6 @@
     "away_goals": 1
   },
   {
-    "match_id": "4210745",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 2,
-    "kickoff": "2026-10-04T12:35:00",
-    "home_team": "FUNDACIÓ TERRASSA FC 1906 B",
-    "away_team": "SAN LORENZO, U.D. A",
-    "venue": "ESTADI OLÍMPIC DE TERRASSA",
-    "latitude": "41.576105",
-    "longitude": "2.011134",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210743",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -220,6 +206,20 @@
     "venue": "CAMP DE FUTBOL ZEM CAN ROSÉS (2)",
     "latitude": "41.5015",
     "longitude": "2.043496",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4378601",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 2,
+    "kickoff": "2026-11-10T19:30:00",
+    "home_team": "FUNDACIÓ TERRASSA FC 1906 B",
+    "away_team": "SAN LORENZO, U.D. A",
+    "venue": "ESTADI OLÍMPIC DE TERRASSA",
+    "latitude": "41.576105",
+    "longitude": "2.011134",
     "home_goals": null,
     "away_goals": null
   },
@@ -490,6 +490,20 @@
     "away_goals": null
   },
   {
+    "match_id": "4210771",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 5,
+    "kickoff": "2026-10-24T14:30:00",
+    "home_team": "PARE IGNASI PUIG, C.F. A",
+    "away_team": "SAN CRISTOBAL, C.P. B",
+    "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
+    "latitude": "41.713922",
+    "longitude": "1.803965",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
     "match_id": "4210774",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -500,20 +514,6 @@
     "venue": "CAMP DE FUTBOL MPAL. DE MATADEPERA",
     "latitude": "41.595051",
     "longitude": "2.032452",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
-    "match_id": "4210771",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 5,
-    "kickoff": "2026-10-24T16:00:00",
-    "home_team": "PARE IGNASI PUIG, C.F. A",
-    "away_team": "SAN CRISTOBAL, C.P. B",
-    "venue": "CAMP DE FUTBOL MPAL. PARE IGNASI PUIG",
-    "latitude": "41.713922",
-    "longitude": "1.803965",
     "home_goals": null,
     "away_goals": null
   },
@@ -536,7 +536,7 @@
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
     "matchday": 5,
-    "kickoff": "2026-10-25T10:30:00",
+    "kickoff": "2026-10-25T09:00:00",
     "home_team": "SANT CUGAT FUTBOL CLUB B",
     "away_team": "JUAN XXIII,C.S. A",
     "venue": "CAMP DE FUTBOL ZEM JAUME TUBAU",
@@ -602,20 +602,6 @@
     "away_goals": null
   },
   {
-    "match_id": "4210782",
-    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
-    "group": "GRUP 6",
-    "matchday": 6,
-    "kickoff": "2026-11-01T09:00:00",
-    "home_team": "GIMNASTIC MANRESA, C.F B",
-    "away_team": "JOANENC, F.C. A",
-    "venue": "CAMP DE FUTBOL CLUB GIMNÀSTIC PARC",
-    "latitude": "41.743797",
-    "longitude": "1.831908",
-    "home_goals": null,
-    "away_goals": null
-  },
-  {
     "match_id": "4210776",
     "competition": "INFANTIL PRIMERA DIVISIÓ S13",
     "group": "GRUP 6",
@@ -668,6 +654,20 @@
     "venue": "CAMP DE FUTBOL ZEM CAN JOFRESA",
     "latitude": "41.54908",
     "longitude": "2.020602",
+    "home_goals": null,
+    "away_goals": null
+  },
+  {
+    "match_id": "4210782",
+    "competition": "INFANTIL PRIMERA DIVISIÓ S13",
+    "group": "GRUP 6",
+    "matchday": 6,
+    "kickoff": "2026-11-01T17:15:00",
+    "home_team": "GIMNASTIC MANRESA, C.F B",
+    "away_team": "JOANENC, F.C. A",
+    "venue": "CAMP DE FUTBOL CLUB GIMNÀSTIC PARC",
+    "latitude": "41.743797",
+    "longitude": "1.831908",
     "home_goals": null,
     "away_goals": null
   },
